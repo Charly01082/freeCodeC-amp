@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html><link rel="stylesheet" href="styles.css">
+  
+  <h1 id="title">This is a Great Survey</h1>
+  <p id="description">I appreciate your taking the time to give me your feedback</p>
+  <form id="survey-form">
+    <input id="name" type="text" required placeholder="Full Name"><label id="name-label"> Name</label>
+    </input>
+    <input id="email" type="email" required placeholder="ex. johndoe@gmail.com"><label id="email-label"> Email </label></input>
+    <input id="number" type="number" min="13" max="99" placeholder="Min. 13"><label id="number-label"> Age</label></input>
+    <label id="name-label"></label>
+    <select id="dropdown">
+      <option id="referral">Referral</option>
+      <option id="other">Other</option>
+
+    </select>
+    <p>Would you tell a business I'm ready to come on board?</p>
+  <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Absolutely!</label>
+  <label><input name="user-recommend" value="maybe" type="radio" class="input-radio" checked="">I'll have to think...</label>
+   <label><input name="user-recommend" value="no" type="radio" class="input-radio" checked="">Wild horses couldn't force me</label> 
+   <p>Which areas do you think I need help with?</p>
+   <span class="clue">(Check all that apply)</span>
+   <label>
+     <input name="improve" value="speed" type="checkbox" class="input-checkbox">Processing Speed
+   </label>
+   <input name="improve" value="knowledge" type="checkbox" class="input-checkbox">General Knowledge
+   </label>
+    <input name="improve" value="creativity" type="checkbox" class="input-checkbox">Project Creativity
+   </label><p></p>
+   <label>Please share any other thoughts you have here:
+     <textarea id="comments" class="input-textarea" name="comment" placeholder="Go ahead, I can handle it..."></textarea></label>
+     <button id='submit' type="submit">Submit</button>
+
+  </form>
+  </html>
